@@ -2,7 +2,7 @@
 
 Spatial interaction research, playable WebXR prototypes and selected immersive work.
 
-**Status 2026-11-09:** Repository initialized for curation and migration planning. No application source, live XR hosting or assets have been migrated here yet. Existing public URLs continue to work in their original repositories. [Artist Portfolio](https://ewanqian.site/) and [Performable Music](https://github.com/ewanqian/performable-music) remain independently maintained.
+**Status 2026-11-09:** Repository initialized. The first generic hand-input module and tests have been copied into packages/hand-input/; no full application, independent XR Pages website or media assets have been migrated here yet. Existing public URLs continue to work in their original repositories. [Artist Portfolio](https://ewanqian.site/) and [Performable Music](https://github.com/ewanqian/performable-music) remain independently maintained.
 
 ## Five research tracks
 
@@ -22,7 +22,7 @@ These are XR Works internal tracks, **not extra top-level navigation sections on
 - [Hand / Synth / Space V2](https://ewanqian.github.io/performable-music/spatial-playground/hand-osc-lab/instrument.html)
 - [Organic Fields](https://ewanqian.github.io/performable-music/spatial-playground/hand-osc-lab/playground.html) — potentially the third externally shared demo; preserve its URL
 
-Later experiments still live at their original Performable Music URLs until copied and published at independent verified paths. A link card is not a completed source migration.
+Later experiments still live at their original Performable Music URLs until copied and published at independent verified paths. One tested generic input component is now copied here at [packages/hand-input](./packages/hand-input/README.md). A link card is not a completed source migration.
 
 ## Independent artwork
 
