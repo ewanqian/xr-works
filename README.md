@@ -32,6 +32,8 @@ Later experiments still live at their original Performable Music URLs until copi
 
 Research → repeatable interaction → desktop/mobile QA → real Quest/AVP QA → curated artwork. Never equate a browser test with headset acceptance; never put all experimental entries into the CV.
 
-See docs/MIGRATION.md, docs/AUDIT_2026-11-09.md and docs/GREENHOUSE_REVIEW_2026-11-09.md for detailed steps as they are created.
+**[Open XR Works / Test Table (existing demo links)](./docs/TEST_TABLE.md)** — categorized clickable index of all already-published studies, hosted at their original URLs.
+
+See [Migration](./docs/MIGRATION.md), [Portfolio / XR audit](./docs/AUDIT_2026-11-09.md) and [Greenhouse completion review](./docs/GREENHOUSE_REVIEW_2026-11-09.md).
 
 This repository contains no extracted game audio or models. Copyrighted fan-study references must be separated from distributable original/licensed assets.
