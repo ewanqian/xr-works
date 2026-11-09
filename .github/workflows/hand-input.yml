@@ -1,0 +1,27 @@
+name: XR Works shared input baseline
+on:
+  push:
+    paths:
+      - 'packages/hand-input/**'
+      - '.github/workflows/hand-input.yml'
+  pull_request:
+    paths:
+      - 'packages/hand-input/**'
+      - '.github/workflows/hand-input.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  node:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check standalone shared module
+        run: |
+          node --check packages/hand-input/gesture-stability.mjs
+          node --check packages/hand-input/gesture-stability.test.mjs
+      - name: Run stable tracking regressions
+        run: node --test packages/hand-input/gesture-stability.test.mjs
