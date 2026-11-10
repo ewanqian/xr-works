@@ -1,4 +1,6 @@
 # XR Works / Test Table — published-link index
+> 2026-11-11: the interactive catalogue is now implemented at [XR Creations](https://ewanqian.site/xr-creations/#library), with four new studies in a shared runtime. This document preserves the 2026-11-09 migration baseline; its statements below about an unbuilt homepage describe that earlier date. Existing demo source locations are unchanged.
+
 2026-11-09 | **Link directory only**, not a new deployed XR Works test site.
 
 The app pages linked below are currently hosted from Performable Music's existing GitHub Pages path. The XR Works repository does not yet contain the application source code or an independent Pages deployment. Entries describe source-built prototypes, not guaranteed Quest hardware compatibility. Early public demo links are permanent.

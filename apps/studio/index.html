@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111413">
+  <meta name="description" content="四个从动作开始的空间作品原型。按下、倾听、构成，再留出安静。">
+  <title>Four Studies — XR Creations</title>
+  <link rel="stylesheet" href="./studio.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../../">XR <span>CREATIONS</span></a>
+    <a class="back" href="../../#studies">← 返回实验室</a>
+    <span class="edition">FOUR STUDIES / 2026</span>
+  </header>
+  <main>
+    <nav class="work-tabs" aria-label="选择作品">
+      <a href="?work=resonance" data-work="resonance"><span>01</span> 掌中残响</a>
+      <a href="?work=score" data-work="score"><span>02</span> 空间铸谱</a>
+      <a href="?work=atlas" data-work="atlas"><span>03</span> 掌上星图</a>
+      <a href="?work=garden" data-work="garden"><span>04</span> 共生之庭</a>
+    </nav>
+    <section class="work-layout">
+      <div class="work-copy">
+        <div class="eyebrow"><span id="work-number">01</span> / INTERACTIVE STUDY</div>
+        <h1 id="work-title">掌中残响</h1>
+        <p class="english-title" id="work-en">HELD RESONANCE</p>
+        <p class="statement" id="statement">一个动作给空间留下多少余音？</p>
+        <p class="description" id="description">按住一根弦，放开。听见它的形状，再让它回到安静。</p>
+        <div class="mapping">
+          <div><span>INPUT</span><p id="input-copy">按住 → 松开</p></div>
+          <div><span>OUTPUT</span><p id="output-copy">有限余音与空间弦</p></div>
+        </div>
+        <div class="progress-block">
+          <div class="progress-label"><span id="phase">等待第一个动作</span><span id="progress-number">0 / 6</span></div>
+          <div class="progress-track"><div id="progress-fill"></div></div>
+          <p class="status" id="status" role="status" aria-live="polite">选择一根弦，按住再松开。</p>
+        </div>
+        <div class="main-actions">
+          <button class="primary" id="perform" type="button">按住，再松开</button>
+          <button class="secondary" id="reset" type="button">重新开始</button>
+        </div>
+        <p class="hint" id="gesture-hint">鼠标或触屏选择，按住后松开。方向键选位，空格演奏。</p>
+        <details class="method">
+          <summary>这个作品怎样发展</summary>
+          <p id="development"></p>
+          <p class="method-credit" id="method-credit"></p>
+          <a href="https://github.com/ewanqian/xr-works/blob/main/docs/FOUR_STUDIES_2026-11-11.md">查看四项创作计划 ↗</a>
+        </details>
+      </div>
+      <div class="stage-area">
+        <div class="stage-shell" id="stage-shell">
+          <canvas id="stage" tabindex="0" aria-label="三维互动空间。可使用下方节点按钮及演奏按钮。"></canvas>
+          <div class="stage-top"><span id="stage-label">01 / HELD RESONANCE</span><span id="input-mode">DESKTOP / TOUCH</span></div>
+          <div class="stage-bottom"><span id="target-label">弦 3</span><span id="sound-state">声音未开启</span></div>
+          <div class="completion" id="completion" hidden><span>STUDY COMPLETE</span><h2 id="completion-title">让余音落下</h2><p id="completion-copy">这段动作已经有了自己的形状。</p></div>
+          <p class="stage-error" id="stage-error" hidden></p>
+        </div>
+        <div class="node-selector" id="node-selector" role="group" aria-label="选择空间节点"></div>
+        <div class="stage-controls">
+          <button id="sound" type="button" aria-pressed="false">开启声音</button>
+          <label class="volume">音量 <input id="volume" type="range" min="0" max="100" value="55" aria-label="主音量"></label>
+          <button id="replay" type="button" disabled>回放这段动作</button>
+          <button id="export" type="button" disabled>导出动作谱</button>
+        </div>
+        <div class="xr-controls">
+          <button id="enter-vr" type="button" disabled>检测 VR…</button>
+          <button id="enter-ar" type="button" disabled>检测 MR…</button>
+          <p id="xr-status">浏览器可直接试玩。正在检查头显入口。</p>
+        </div>
+        <p class="prototype-note">作品原型 · 桌面与头显使用同一动作逻辑。头显手势及听感待实际设备验收。</p>
+      </div>
+    </section>
+  </main>
+  <footer><span>EWAN QIAN / INPUT → STATE → SOUND + SPACE</span><a href="../../">XR Creations ↗</a></footer>
+  <script type="module" src="./studio.mjs"></script>
+  <noscript><p class="stage-error">请开启 JavaScript 以运行交互作品。</p></noscript>
+</body>
+</html>

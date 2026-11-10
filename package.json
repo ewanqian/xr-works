@@ -1,0 +1,12 @@
+{
+  "name": "xr-creations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check-site.mjs",
+    "test": "node --test packages/hand-input/*.test.mjs apps/studio/*.test.mjs",
+    "build": "node scripts/build-site.mjs"
+  }
+}

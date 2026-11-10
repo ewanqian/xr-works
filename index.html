@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17191a">
+  <meta name="description" content="XR Creations — 钱誉文的空间交互试验场。Hand Lab、可玩的声音与符号实验，以及持续生长的 WebXR 研究目录。">
+  <title>XR Creations — 手势、声音与空间</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317191a'/%3E%3Cpath d='M15 17l34 30M49 17L15 47M32 10v44' stroke='%23eeeae3' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./assets/hub.css">
+  <script type="module" src="./assets/hub.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到内容</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="XR Creations 首页"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 8l20 18M27 8L7 26M17 3v28"/></svg><span>XR <strong>Creations</strong></span></a>
+    <nav aria-label="主导航"><a href="#studies">作品实验</a><a href="#library">研究目录</a><a href="#destiny">扩展计划</a></nav>
+    <a class="portfolio-link" href="https://ewanqian.site/#/apps">Ewan Qian <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="crossmark" aria-hidden="true">＋</span> A SPATIAL PLAYGROUND</div>
+        <h1 id="hero-title">XR<br><span>Creations.</span></h1>
+        <p class="hero-intro">从一个动作，<br>开始一段空间体验。</p>
+        <p class="hero-detail">手势、声音、符号与会回应的环境。<br>用鼠标先试一试，也可以戴上头显走进去。</p>
+        <div class="hero-actions"><a class="button button-light" href="https://ewanqian.github.io/performable-music/spatial-playground/hand-osc-lab/instrument.html">开始 Hand Lab <span aria-hidden="true">↗</span></a><a class="text-link" href="#studies">探索四个作品 <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="空间线框的指针交互预览">
+        <div class="art-heading"><span>FIELD STUDY / 001</span><span class="art-status"><i aria-hidden="true"></i> POINTER INPUT</span></div>
+        <canvas id="field-canvas" aria-hidden="true"></canvas>
+        <div class="art-origin" aria-hidden="true"><span>Y</span><span>X</span><span>Z</span></div>
+        <div class="art-footer"><span>移动指针，扰动这个场。<br><small>MOVE TO EXPLORE</small></span><span class="coordinate" aria-hidden="true">X <b id="pointer-x">0.00</b><br>Y <b id="pointer-y">0.00</b></span></div>
+        <div class="orbit-mark" aria-hidden="true">01—04</div>
+      </div>
+      <div class="hero-bottom"><span>EWAN QIAN / 钱誉文</span><span>WEB · HANDS · SOUND · SPACE</span><a href="#start" aria-label="查看从哪里开始">SCROLL TO ENTER <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="start" class="start-section section-shell" aria-labelledby="start-title">
+      <div class="section-heading"><div><span class="eyebrow">00 / START HERE</span><h2 id="start-title">找到你的入口。</h2></div><p>先玩声音，再观察动作。<br>常用的两个入口放在这里。</p></div>
+      <div class="start-grid">
+        <a class="start-card start-card-primary" href="https://ewanqian.github.io/performable-music/spatial-playground/hand-osc-lab/instrument.html">
+          <div class="start-glyph" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M18 46c8-2 8-19 15-19s7 33 14 33 8-46 15-46"/><path d="M14 40h52M40 13v54" class="thin"/><circle cx="33" cy="27" r="4"/><circle cx="47" cy="60" r="4"/></svg></div>
+          <div><span class="eyebrow">PLAY / HAND LAB</span><h3>用手，试一试声音。</h3><p>Hand / Synth / Space</p><span class="tags"><span>捏合输入</span><span>声音反馈</span><span>桌面 / XR</span></span></div><span class="start-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="start-card" href="https://ewanqian.github.io/performable-music/spatial-playground/hand-osc-lab/">
+          <div class="start-glyph" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M22 58L18 36l8-3 6 12-1-27 8-1 4 24 1-29 8 1 1 30 8-21 7 4-8 31-15 9Z"/><path d="M24 36l22 20 16-30M35 19l11 37 2-42" class="thin"/><circle cx="46" cy="56" r="4"/></svg></div>
+          <div><span class="eyebrow">CONNECT / HANDS OSC</span><h3>看见动作的结构。</h3><p>Hand / Space / OSC</p><span class="tags"><span>关节追踪</span><span>空间 OSC</span><span>输入诊断</span></span></div><span class="start-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <p class="device-note"><span aria-hidden="true">↳</span> 首次发声需要点击开启声音。XR 模式由设备与浏览器决定；头显体验仍需实际设备验收。</p>
+    </section>
+
+    <section id="studies" class="studies-section section-shell" aria-labelledby="studies-title">
+      <div class="section-heading"><div><span class="eyebrow">01 / FOUR PLAYABLE STUDIES</span><h2 id="studies-title">一个输入，四种世界。</h2></div><p>每个实验都有起点、发展与收束。<br>从一次触碰，走到一次完整体验。</p></div>
+      <div class="studies-grid">
+        <a class="study-card resonance" href="./apps/studio/?work=resonance">
+          <div class="study-art" aria-hidden="true"><span class="study-no">01</span><svg viewBox="0 0 360 240"><g class="resonance-lines"><ellipse cx="180" cy="119" rx="116" ry="48"/><ellipse cx="180" cy="119" rx="94" ry="66"/><ellipse cx="180" cy="119" rx="70" ry="84"/><ellipse cx="180" cy="119" rx="43" ry="100"/><ellipse cx="180" cy="119" rx="17" ry="112"/></g><path d="M54 119h252M180 6v226" class="guide"/><circle cx="180" cy="119" r="5" class="solid"/></svg><span class="study-time">HOLD → RELEASE → DECAY</span></div>
+          <div class="study-body"><div class="study-kicker">HELD RESONANCE</div><h3>掌中残响 <span aria-hidden="true">↗</span></h3><p>捏合积蓄张力，松开时发声。<br>六次释放，构成一段有呼吸的短句。</p><div class="study-meta"><span>按住 / 松开</span><span>有限余音</span></div></div>
+        </a>
+        <a class="study-card score" href="./apps/studio/?work=score">
+          <div class="study-art" aria-hidden="true"><span class="study-no">02</span><svg viewBox="0 0 360 240"><path d="M61 169l79-86 84 59 78-85M61 169l75 39 88-66 78 39M140 83l-4 125M224 142V56" class="guide"/><g><circle cx="61" cy="169" r="21"/><circle cx="140" cy="83" r="26"/><circle cx="224" cy="142" r="36"/><circle cx="302" cy="57" r="15"/></g><path d="M65 169l75-86 84 59 78-85"/><circle cx="224" cy="142" r="5" class="solid"/></svg><span class="study-time">ACT → RECORD → REPLAY</span></div>
+          <div class="study-body"><div class="study-kicker">SCORE FOUNDRY</div><h3>空间铸谱 <span aria-hidden="true">↗</span></h3><p>把动作安排在时间里。<br>留下片段，回放自己的空间乐谱。</p><div class="study-meta"><span>节点 / 节奏</span><span>录制与回放</span></div></div>
+        </a>
+        <a class="study-card atlas" href="./apps/studio/?work=atlas">
+          <div class="study-art" aria-hidden="true"><span class="study-no">03</span><svg viewBox="0 0 360 240"><circle cx="180" cy="120" r="87" class="guide"/><ellipse cx="180" cy="120" rx="126" ry="48" class="guide"/><path d="M79 145l61-76 51 105 60-99 29 69"/><path d="M79 145l112 29 89-30M140 69l111 6" class="guide"/><g class="stars"><circle cx="79" cy="145" r="4"/><circle cx="140" cy="69" r="6"/><circle cx="191" cy="174" r="4"/><circle cx="251" cy="75" r="6"/><circle cx="280" cy="144" r="4"/></g><path d="M172 25h16M180 17v16M180 208v16M172 216h16"/></svg><span class="study-time">LOCATE → JOIN → INSCRIBE</span></div>
+          <div class="study-body"><div class="study-kicker">PALM ATLAS</div><h3>掌上星图 <span aria-hidden="true">↗</span></h3><p>找到七个位置，逐次确认。<br>让有意的选择生成一个个人符形。</p><div class="study-meta"><span>认位 / 确认</span><span>符号生成</span></div></div>
+        </a>
+        <a class="study-card garden" href="./apps/studio/?work=garden">
+          <div class="study-art" aria-hidden="true"><span class="study-no">04</span><svg viewBox="0 0 360 240"><path d="M55 159l54-34 34 45 37-63 48 44 58-46M109 125l13-62 58 44 35-67 13 111 60 46M143 170l-7 44 92-63M180 107l45-33 61 31 23-50M55 159l81 55M122 63l103 11" class="network"/><g class="stars"><circle cx="55" cy="159" r="3"/><circle cx="109" cy="125" r="5"/><circle cx="143" cy="170" r="4"/><circle cx="180" cy="107" r="8"/><circle cx="228" cy="151" r="5"/><circle cx="286" cy="105" r="4"/><circle cx="122" cy="63" r="3"/><circle cx="215" cy="40" r="3"/><circle cx="288" cy="197" r="3"/><circle cx="136" cy="214" r="3"/><circle cx="225" cy="74" r="4"/><circle cx="309" cy="55" r="3"/></g><circle cx="180" cy="107" r="26" class="guide"/><circle cx="180" cy="107" r="44" class="guide"/></svg><span class="study-time">SEED → PROPAGATE → SETTLE</span></div>
+          <div class="study-body"><div class="study-kicker">GARDEN OF SIGNALS</div><h3>共生之庭 <span aria-hidden="true">↗</span></h3><p>把一个脉冲交给网络。<br>观察它传播，学习何时介入与停手。</p><div class="study-meta"><span>脉冲 / 平衡</span><span>空间网络</span></div></div>
+        </a>
+      </div>
+      <div class="studies-footnote"><span>四个可玩研究原型 · 桌面 / 触屏 / WebXR</span><a class="quiet-link" href="https://github.com/ewanqian/xr-works/blob/main/docs/FOUR_STUDIES_2026-11-11.md" target="_blank" rel="noopener noreferrer">阅读创作计划 <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section id="destiny" class="destiny-section section-shell" aria-labelledby="destiny-title">
+      <div class="section-heading"><div><span class="eyebrow">02 / FAN INTERACTION STUDIES</span><h2 id="destiny-title">三种职业，三种动作语法。</h2></div><p>Destiny 2 粉丝交互研究。<br>让动作与声音一起形成职业差异。</p></div>
+      <div class="class-layout">
+        <div class="class-tabs" role="tablist" aria-label="选择职业" aria-orientation="vertical">
+          <button id="tab-warlock" type="button" role="tab" aria-selected="true" aria-controls="class-panel" data-class="warlock"><span class="class-symbol" aria-hidden="true">✧</span><span><strong>术士</strong><small>WARLOCK</small></span><span class="class-mini-status">原型</span></button>
+          <button id="tab-titan" type="button" role="tab" aria-selected="false" aria-controls="class-panel" tabindex="-1" data-class="titan"><span class="class-symbol" aria-hidden="true">▱</span><span><strong>泰坦</strong><small>TITAN</small></span><span class="class-mini-status">计划</span></button>
+          <button id="tab-hunter" type="button" role="tab" aria-selected="false" aria-controls="class-panel" tabindex="-1" data-class="hunter"><span class="class-symbol" aria-hidden="true">⌁</span><span><strong>猎人</strong><small>HUNTER</small></span><span class="class-mini-status">计划</span></button>
+        </div>
+        <div id="class-panel" class="class-panel" role="tabpanel" aria-labelledby="tab-warlock" tabindex="0">
+          <div class="class-panel-top"><span id="class-status" class="status-pill">已有交互原型</span><span id="class-number">CLASS / 01</span></div>
+          <h3 id="class-title">积蓄、塑形、释放。</h3><p id="class-description">从现有六系实验继续深化。让不同能力拥有自己的蓄力、命中与余韵，再接入对应的音乐切片。</p>
+          <div id="class-actions" class="class-actions" aria-label="动作阶段"><span>召唤</span><span>持续塑形</span><span>释放 / 冻结</span><span>命中 / 碎裂</span><span>消散</span><span>超能</span></div>
+          <div class="class-panel-bottom"><span id="class-gesture">现有原型 · 掌心与手势</span><a id="class-launch" class="button button-outline" href="https://ewanqian.github.io/performable-music/spatial-playground/warlock-immersion/">打开术士原型 <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+      <details class="clip-station">
+        <summary><span><span class="clip-icon" aria-hidden="true">♫</span> 声音切片台 <small>为当前职业准备六个声音事件</small></span><span aria-hidden="true">＋</span></summary>
+        <div class="clip-inner"><div class="clip-intro"><p>选取本地音频，试听它放在哪个动作节点。<br><small>文件只在当前设备试听，刷新后清空；目前尚未接入游戏原型。</small></p><div class="clip-tools"><button type="button" id="stop-clips" class="button button-subtle">暂停全部</button><button type="button" id="reset-clips" class="button button-subtle">清空当前职业</button></div></div><div id="clip-grid" class="clip-grid"></div><p id="clip-message" class="clip-message" role="status" aria-live="polite">当前职业：术士。每段最多 30 MB。</p></div>
+      </details>
+      <p class="fan-note">独立粉丝研究 · 现有术士原型使用原创几何与合成声音；泰坦与猎人尚在计划中。<a href="https://github.com/ewanqian/xr-works/blob/main/docs/DESTINY_CLASS_ROADMAP.md" target="_blank" rel="noopener noreferrer">职业与声音计划 ↗</a></p>
+    </section>
+
+    <section id="library" class="library-section section-shell" aria-labelledby="library-title">
+      <div class="section-heading"><div><span class="eyebrow">03 / RESEARCH LIBRARY</span><h2 id="library-title">每次试验，都有去处。</h2></div><p>按你想研究的问题查找。<br>旧入口与对照版本继续保留。</p></div>
+      <div class="library-tools"><div id="category-filters" class="filter-group" role="group" aria-label="研究分类"></div><label class="search-label"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="library-search" type="search" placeholder="搜索名称、动作、设备…" aria-label="搜索研究目录" autocomplete="off"></label></div>
+      <div class="results-heading"><span id="result-count" role="status" aria-live="polite">正在整理目录…</span><span>STUDY / INPUT / PLATFORM</span></div>
+      <div id="catalog-list" class="catalog-list"></div>
+      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3>这里还没有匹配的实验。</h3><p>试试「手势」「声音」「Quest」，或查看全部目录。</p><button id="reset-search" type="button" class="button button-outline">清除筛选</button></div>
+      <noscript><p class="noscript-note">完整目录需要 JavaScript。你仍可打开上方作品，或查看 <a href="https://github.com/ewanqian/xr-works/blob/main/docs/TEST_TABLE.md">完整测试表 ↗</a>。</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer section-shell"><div class="footer-wordmark">XR <span>Creations.</span><span class="footer-star" aria-hidden="true">✳</span></div><div class="footer-bottom"><p>钱誉文 Ewan Qian<br><span>Making space for interaction.</span></p><div><a href="https://ewanqian.site/#/apps">个人主页 ↗</a><a href="https://github.com/ewanqian/xr-works" target="_blank" rel="noopener noreferrer">源代码 ↗</a><a href="#main">回到顶部 ↑</a></div><span class="footer-edition">RESEARCH EDITION<br>2026.11</span></div></footer>
+</body>
+</html>

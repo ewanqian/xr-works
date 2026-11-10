@@ -1,4 +1,6 @@
 # XR Works — migration and source-of-truth plan
+> 2026-11-11 update: the homepage and four original studies are implemented in this repository. The existing Portfolio publisher hosts a build from a pinned source commit at `/xr-creations/`. Old demos remain at their original URLs; a catalogue entry is not a code migration. The original wave plan below is retained as historical context. Browser and headset acceptance remain distinct, and the new entries are labelled prototypes.
+
 2026-11-09 | Status: planned, not copied or deployed
 
 ## Decisions
